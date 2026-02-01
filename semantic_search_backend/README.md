@@ -19,18 +19,6 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-Optional: enable sentence-transformers for better semantics:
-
-```powershell
-pip install sentence-transformers
-```
-
-Force TF-IDF (no model download) even if sentence-transformers is installed:
-
-```powershell
-$env:EMBEDDER_MODE = "tfidf"
-```
-
 Run the service:
 
 ```powershell
